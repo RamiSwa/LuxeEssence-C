@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+
+    <title>LuxeEssence Clinic beauty and skincare</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Navbar (Main with Search Bar, Cart, Profile) -->
+        <nav class="navbar navbar-expand-lg shadow-sm" id="top-nav">
+            <div class="container-fluid">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="#">
+                LuxeEssence Clinic
+            </a>
+        
+            <!-- Toggler button for the top navbar (mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation" id="toggle-btn">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Collapsible content for the top navbar -->
+            <div class="collapse navbar-collapse" id="topNavbar">
+                <!-- Centered Search Bar -->
+                <form class="d-flex mx-auto w-20 w-md-10">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary" type="submit">Search</button>
+                </form>
+            <!-- Social Media Icons -->
+            <div class="d-flex ms-3 ">
+                <span class="fa-stack me-2">
+                <a href="#">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+                </a>
+                </span>
+                <span class="fa-stack">
+                <a href="#">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x text-white"></i>
+                </a>
+                </span>
+            </div>
+                <!-- Right side icons (Cart, User) -->
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-user"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                    <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        
+        <!-- Bottom Navbar (Categories, Bestsellers, etc.) -->
+        <nav class="navbar navbar-expand-lg shadow-sm " id="bottom-nav">
+            <div class="container-fluid">
+            <!-- Toggler button for the bottom navbar (mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottomNavbar" aria-controls="bottomNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Collapsible content for the bottom navbar -->
+            <div class="collapse navbar-collapse" id="bottomNavbar">
+                <ul class="navbar-nav">
+            <!-- Home -->
+            <li class="nav-item">
+                <a href="index.html" class="nav-link fw-semibold">Home</a>
+            </li>
+    
+            <!-- Shop with Categories Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="shop.html" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                <li><a class="dropdown-item" href="shop.html?category=skincare">Skincare</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=serums">Serums</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=beauty-tools">Beauty Tools</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=cleansers">Cleansers</a></li>
+                </ul>
+            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about1.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                </ul>
+        
+                <!-- Right-side button -->
+                <button class="btn btn-outline-primary ms-auto" type="button">
+                <a href="booking.html" class="nav-link fw-semibold">Make an appointment</a>
+                </button>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section id="hero" class="hero-section pt-6">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item text-black active">
+                    <img src="images/home/slide-1.png" class="d-block w-100" alt="Skincare Hero">
+                    <div class="carousel-caption">
+                        <h1>Glow with LuxeEssence</h1>
+                        <p>Discover our latest skincare collection</p>
+                        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item text-black">
+                    <img src="images/home/slide-2.png" class="d-block w-100" alt="Skincare Hero">
+                    <div class="carousel-caption">
+                        <h1>Glow Series - New Collection</h1>
+                        <p>Discover Our Latest Products for a Radiant Glow</p>
+                        <a href="shop.html" class="btn btn-primary">Explore the Collection</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+
+<!-- Product Single Section -->
+<!-- Product Single Section -->
+<section class="product-single py-5">
+  <div class="container">
+      <div class="row">
+          <!-- Product Images Section -->
+          <div class="col-lg-6 mb-5">
+              <!-- Main Product Image Slider -->
+              <div class="product-sync-init">
+                  <!-- Main Product Image 1 -->
+                  <div class="product-thumb text-center">
+                      <img class="img-fluid rounded shadow-sm" src="images/shop/Daily-Defense-SPF-50-Moisturizer.png" alt="Main Product Image" style="max-height: 450px; width: auto;">
+                  </div>
+                  <!-- Main Product Image 2 -->
+                  <div class="product-thumb text-center">
+                      <img class="img-fluid rounded shadow-sm" src="images/shop/Holiday-Skincare-Sale.png" alt="Main Product Image" style="max-height: 450px; width: auto;">
+                  </div>
+                  <!-- Main Product Image 3 -->
+                  <div class="product-thumb text-center">
+                      <img class="img-fluid rounded shadow-sm" src="images/shop/Ultra-Rich-Night-Cream.png" alt="Main Product Image" style="max-height: 450px; width: auto;">
+                  </div>
+              </div>
+
+              <!-- Thumbnail Slider -->
+              <div class="product-sync-nav mt-4">
+                  <!-- Thumbnail 1 -->
+                  <div class="single-product m-2">
+                      <div class="product-thumb">
+                          <img class="img-fluid rounded shadow-sm" src="images/shop/Daily-Defense-SPF-50-Moisturizer.png" alt="Thumbnail Image" style="max-height: 100px; width: auto;">
+                      </div>
+                  </div>
+                  <!-- Thumbnail 2 -->
+                  <div class="single-product m-2">
+                      <div class="product-thumb">
+                          <img class="img-fluid rounded shadow-sm" src="images/shop/Holiday Skincare Sale Buy 2, Get 1 Free!.png" alt="Thumbnail Image" style="max-height: 100px; width: auto;">
+                      </div>
+                  </div>
+                  <!-- Thumbnail 3 -->
+                  <div class="single-product m-2">
+                      <div class="product-thumb">
+                          <img class="img-fluid rounded shadow-sm" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="Thumbnail Image" style="max-height: 100px; width: auto;">
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Product Info Section (optional) -->
+          <!-- Product Info Section -->
+          <div class="col-lg-6">
+            <div class="single-product-info">
+                <!-- Product Title and Ratings -->
+                <div class="single-product-head mb-4">
+                    <h2 class="title mb-3">Originals Windbreaker Winter Face Cream</h2>
+                    <div class="star-rating mb-2 d-flex align-items-center">
+                        <span class="far fa-star text-warning"></span>
+                        <span class="far fa-star text-warning"></span>
+                        <span class="far fa-star text-warning"></span>
+                        <span class="far fa-star text-warning"></span>
+                        <span class="fas fa-star text-warning"></span>
+                        <a href="#write-comment" class="text-muted ms-2"><i class="far fa-comment-dots"></i> Read reviews (1)</a>
+                    </div>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#reviewModal" class="text-muted"><i class="far fa-edit"></i> Write a review</a>
+                </div>
+
+                <!-- Product Price, Discount, and Description -->
+                <div class="product-body mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="product-price me-3">
+                            <del class="text-muted">$23.90</del>
+                            <span class="onsale fw-bold text-success">$21.51</span>
+                        </span>
+                        <span class="badge bg-success rounded-0">Save 10%</span>
+                    </div>
+                    <p class="mb-3 text-muted">Block out the haters with the fresh adidas® Originals Kaval Windbreaker Face Cream.</p>
+                    <ul class="text-muted">
+                        <li>Part of the Kaval Collection.</li>
+                        <li>Regular fit, perfect for any activity.</li>
+                        <li>Face Cream specifically constructed for freedom of movement.</li>
+                    </ul>
+                </div>
+
+                <!-- Add to Cart and Quantity Controls -->
+                <div class="product-footer mb-4">
+                    <div class="product-count d-flex flex-column flex-sm-row align-items-center mb-4">
+                        <div class="count d-flex align-items-center">
+                            <!-- Number Input Field -->
+                            <input id="quantity" type="number" min="1" max="10" step="1" value="1" class="form-control text-center" style="width: 80px; margin-right: 10px;">
+
+                            <!-- Increment and Decrement Buttons -->
+                            <div class="button-group d-flex flex-column me-4">
+                                <button id="increment-btn" class="count-btn increment btn btn-sm btn-outline-secondary mb-1" style="padding: 5px 10px;">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                <button id="decrement-btn" class="count-btn decrement btn btn-sm btn-outline-secondary" style="padding: 5px 10px;">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="add-to-cart-btn">
+                            <button class="btn btn-primary btn--xl w-100 w-sm-auto mt-3 mt-sm-0">
+                                <i class="fas fa-shopping-cart me-2"></i> Add to cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="pro-social-links d-flex align-items-center">
+                        <span class="me-3 text-dark">Share</span>
+                        <ul class="d-flex list-unstyled mb-0">
+                            <li class="me-2"><a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="me-2"><a href="#" class="text-dark"><i class="fab fa-twitter"></i></a></li>
+                            <li class="me-2"><a href="#" class="text-dark"><i class="fab fa-instagram"></i></a></li>
+                            <li class="me-2"><a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- product-single end -->
+
+
+
+
+
+
+
+
+<!-- Product Tab Start -->
+<div class="product-tab py-5">
+    <div class="container">
+        <!-- Product Tab Navigation -->
+        <div class="product-tab-nav">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="product-tab-menu single-product">
+                        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    Description
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-details-tab" data-bs-toggle="pill" href="#pills-details" role="tab" aria-controls="pills-details" aria-selected="false">
+                                    Product Details
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-reviews-tab" data-bs-toggle="pill" href="#pills-reviews" role="tab" aria-controls="pills-reviews" aria-selected="false">
+                                    Reviews
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Product Tab Navigation End -->
+
+        <!-- Tab Content -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Description Tab -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="single-product-desc px-3">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Product Details Tab -->
+                    <div class="tab-pane fade" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab">
+                        <div class="single-product-desc px-3">
+                            <ul class="product-details-list">
+                                <li><strong>Weight:</strong> 400 g</li>
+                                <li><strong>Dimensions:</strong> 10 x 10 x 15 cm</li>
+                                <li><strong>Materials:</strong> 60% cotton, 40% polyester</li>
+                                <li><strong>Other Info:</strong> American heirloom jean shorts pug seitan letterpress</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Tab -->
+                    <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab">
+                        <div class="single-product-desc">
+                            <div class="row">
+                                <!-- Review List -->
+                                <div class="col-lg-7 mb-4">
+                                    <div class="review-wrapper">
+                                        <div class="single-review d-flex mb-4">
+                                            <div class="review-img me-3">
+                                                <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Review" class="rounded-circle" style="width: 60px; height: 60px;">
+                                            </div>
+                                            <div class="review-content">
+                                                <h5 class="mb-1">White Lewis</h5>
+                                                <div class="star-rating mb-2">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </div>
+                                                <p>Great product! Helped my skin feel refreshed and hydrated.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Child Review -->
+                                        <div class="single-review child-review d-flex mb-4">
+                                            <div class="review-img me-3">
+                                                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Review" class="rounded-circle" style="width: 60px; height: 60px;">
+                                            </div>
+                                            <div class="review-content">
+                                                <h5 class="mb-1">John Doe</h5>
+                                                <div class="star-rating mb-2">
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="fas fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </div>
+                                                <p>Good product, but delivery took longer than expected.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Review Form -->
+                                <div class="col-lg-5">
+                                    <div class="review-form-wrapper">
+                                        <h4>Add a Review</h4>
+                                        <form>
+                                            <div class="star-box mb-3">
+                                                <div class="star-rating">
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                    <span class="far fa-star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" placeholder="Email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" rows="4" placeholder="Your Review"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product Tab End -->
+
+
+<!-- You might also like section start -->
+<section class="py-5">
+  <div class="container">
+      <!-- Section Title -->
+      <div class="row">
+          <div class="col-12">
+              <div class="section-title text-center mb-4">
+                  <h2 class="title mb-2">You might also like</h2>
+                  <hr class="w-25 mx-auto my-3" />
+                  <p class="text-muted">Explore related products in our weekly lineup</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Product Slider Start -->
+      <div class="row">
+          <div class="col-12">
+              <div class="product-slider-init">
+                  <!-- Slider Item 1 -->
+                  <div class="slider-item m-3">
+                      <div class="card product-card h-100">
+                          <div class="card-body p-0 d-flex flex-column">
+                              <!-- Product Thumbnail -->
+                              <div class="product-thumbnail position-relative">
+                                  <a href="single-product.html">
+                                      <img class="img-fluid" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="Ultra-Rich Night Cream">
+                                  </a>
+                              </div>
+                              <!-- Product Description -->
+                              <div class="media-body mt-4 p-4 text-center">
+                                  <h5 class="title">
+                                      <a href="shop-grid-4-column.html">LuxeEssence Ultra-Rich Night Cream</a>
+                                  </h5>
+                                  <div class="star-rating">
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between mt-3">
+                                      <span class="product-price">$21.51</span>
+                                      <button class="pro-btn" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                                          <i class="fas fa-shopping-basket"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Slider Item 1 -->
+                  <div class="slider-item m-3">
+                      <div class="card product-card h-100">
+                          <div class="card-body p-0 d-flex flex-column">
+                              <!-- Product Thumbnail -->
+                              <div class="product-thumbnail position-relative">
+                                  <a href="single-product.html">
+                                      <img class="img-fluid" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="Ultra-Rich Night Cream">
+                                  </a>
+                              </div>
+                              <!-- Product Description -->
+                              <div class="media-body mt-4 p-4 text-center">
+                                  <h5 class="title">
+                                      <a href="shop-grid-4-column.html">LuxeEssence Ultra-Rich Night Cream</a>
+                                  </h5>
+                                  <div class="star-rating">
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between mt-3">
+                                      <span class="product-price">$21.51</span>
+                                      <button class="pro-btn" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                                          <i class="fas fa-shopping-basket"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Slider Item 1 -->
+                  <div class="slider-item m-3">
+                      <div class="card product-card h-100">
+                          <div class="card-body p-0 d-flex flex-column">
+                              <!-- Product Thumbnail -->
+                              <div class="product-thumbnail position-relative">
+                                  <a href="single-product.html">
+                                      <img class="img-fluid" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="Ultra-Rich Night Cream">
+                                  </a>
+                              </div>
+                              <!-- Product Description -->
+                              <div class="media-body mt-4 p-4 text-center">
+                                  <h5 class="title">
+                                      <a href="shop-grid-4-column.html">LuxeEssence Ultra-Rich Night Cream</a>
+                                  </h5>
+                                  <div class="star-rating">
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between mt-3">
+                                      <span class="product-price">$21.51</span>
+                                      <button class="pro-btn" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                                          <i class="fas fa-shopping-basket"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Slider Item 1 -->
+                  <div class="slider-item m-3">
+                      <div class="card product-card h-100">
+                          <div class="card-body p-0 d-flex flex-column">
+                              <!-- Product Thumbnail -->
+                              <div class="product-thumbnail position-relative">
+                                  <a href="single-product.html">
+                                      <img class="img-fluid" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="Ultra-Rich Night Cream">
+                                  </a>
+                              </div>
+                              <!-- Product Description -->
+                              <div class="media-body mt-4 p-4 text-center">
+                                  <h5 class="title">
+                                      <a href="shop-grid-4-column.html">LuxeEssence Ultra-Rich Night Cream</a>
+                                  </h5>
+                                  <div class="star-rating">
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between mt-3">
+                                      <span class="product-price">$21.51</span>
+                                      <button class="pro-btn" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                                          <i class="fas fa-shopping-basket"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Slider Item 1 -->
+                  <div class="slider-item m-3">
+                      <div class="card product-card h-100">
+                          <div class="card-body p-0 d-flex flex-column">
+                              <!-- Product Thumbnail -->
+                              <div class="product-thumbnail position-relative">
+                                  <a href="single-product.html">
+                                      <img class="img-fluid" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="Ultra-Rich Night Cream">
+                                  </a>
+                              </div>
+                              <!-- Product Description -->
+                              <div class="media-body mt-4 p-4 text-center">
+                                  <h5 class="title">
+                                      <a href="shop-grid-4-column.html">LuxeEssence Ultra-Rich Night Cream</a>
+                                  </h5>
+                                  <div class="star-rating">
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between mt-3">
+                                      <span class="product-price">$21.51</span>
+                                      <button class="pro-btn" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                                          <i class="fas fa-shopping-basket"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Slider Item 1 -->
+                  <div class="slider-item m-3">
+                      <div class="card product-card h-100">
+                          <div class="card-body p-0 d-flex flex-column">
+                              <!-- Product Thumbnail -->
+                              <div class="product-thumbnail position-relative">
+                                  <a href="single-product.html">
+                                      <img class="img-fluid" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="Ultra-Rich Night Cream">
+                                  </a>
+                              </div>
+                              <!-- Product Description -->
+                              <div class="media-body mt-4 p-4 text-center">
+                                  <h5 class="title">
+                                      <a href="shop-grid-4-column.html">LuxeEssence Ultra-Rich Night Cream</a>
+                                  </h5>
+                                  <div class="star-rating">
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-between mt-3">
+                                      <span class="product-price">$21.51</span>
+                                      <button class="pro-btn" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                                          <i class="fas fa-shopping-basket"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Add more slider items as needed -->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- You might also like section end -->
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row justify-content-between">
+        <!-- Logo and About Us -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="footer-logo mb-3">
+            <a href="index.html" class="text-white fs-4">LuxeEssence Clinic</a>
+          </div>
+          <p class="text-light">
+            LuxeEssence Clinic provides premium skincare products designed to bring out your natural glow. We focus on quality and results-driven formulas that leave your skin feeling nourished and radiant.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2 mb-4">
+          <h5 class="text-uppercase">Information</h5>
+          <ul class="footer-menu list-unstyled">
+            <li><a href="about1.html" class="text-light">About Us</a></li>
+            <li><a href="contact.html" class="text-light">Contact Us</a></li>
+            <li><a href="services.html" class="text-light">Services</a></li>
+            <li><a href="fqa.html" class="text-light">FQA</a></li>
+            <li><a href="refund-policy.html" class="text-light">Refund Policy</a></li>
+          </ul>
+        </div>
+  
+        <!-- Account Links -->
+        <div class="col-6 col-md-3 col-lg-2 mb-4">
+          <h5 class="text-uppercase">Account</h5>
+          <ul class="footer-menu list-unstyled">
+            <li><a href="login.html" class="text-light">Login-Register</a></li>
+            <li><a href="dashboard.html" class="text-light">My Account</a></li>
+            <li><a href="booking.html" class="text-light">Make An Appointment</a></li>
+  
+          </ul>
+        </div>
+  
+        <!-- Newsletter -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <h5 class="text-uppercase">Stay in the Loop</h5>
+          <p class="text-light mb-3">Subscribe to our newsletter for the latest updates on new arrivals and special offers.</p>
+          <form class="newsletter-form d-flex" action="#" method="post">
+            <input class="form-control me-2" type="email" placeholder="Enter your email" required>
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Social Media and Copyright -->
+      <div class="row align-items-center pt-4 mt-4 border-top">
+        <div class="col-md-6 col-lg-4 text-center text-md-start mb-3 mb-md-0">
+          <p>&copy; 2024 LuxeEssence. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center">
+          <ul class="social-icons list-unstyled d-flex justify-content-center mb-0">
+            <li class="me-3"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="me-3"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+            <li class="me-3"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            <li class="me-3"><a href="#" class="text-white"><i class="fab fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-12 col-lg-4 text-center text-lg-end">
+          <img src="images/1.webp" alt="Payment Methods" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/single-product.js"></script>
+<!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+<!-- Include jQuery and Slick's JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    // Initialize Slick Slider
+    $('.product-slider-init').slick({
+        slidesToShow: 3,   // Show 4 products at a time
+        slidesToScroll: 1, // Scroll 1 product at a time
+        infinite: true,    // Infinite scrolling
+        arrows: true,      // Show navigation arrows
+        prevArrow: '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1024, // For smaller devices
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768, // For tablet devices
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576, // For mobile devices
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <title>LuxeEssence Clinic beauty and skincare</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Top Navbar (Main with Search Bar, Cart, Profile) -->
+    <nav class="navbar navbar-expand-lg shadow-sm" id="top-nav">
+        <div class="container-fluid">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand" href="#">
+            LuxeEssence Clinic
+        </a>
+    
+        <!-- Toggler button for the top navbar (mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation" id="toggle-btn">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapsible content for the top navbar -->
+        <div class="collapse navbar-collapse" id="topNavbar">
+            <!-- Centered Search Bar -->
+            <form class="d-flex mx-auto w-20 w-md-10">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+        <!-- Social Media Icons -->
+        <div class="d-flex ms-3 ">
+            <span class="fa-stack me-2">
+            <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+            </a>
+            </span>
+            <span class="fa-stack">
+            <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+            </a>
+            </span>
+        </div>
+            <!-- Right side icons (Cart, User) -->
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-user"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
+    <!-- Bottom Navbar (Categories, Bestsellers, etc.) -->
+    <nav class="navbar navbar-expand-lg shadow-sm " id="bottom-nav">
+        <div class="container-fluid">
+        <!-- Toggler button for the bottom navbar (mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottomNavbar" aria-controls="bottomNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapsible content for the bottom navbar -->
+        <div class="collapse navbar-collapse" id="bottomNavbar">
+            <ul class="navbar-nav">
+        <!-- Home -->
+        <li class="nav-item">
+            <a href="index.html" class="nav-link fw-semibold">Home</a>
+        </li>
+
+        <!-- Shop with Categories Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="shop.html" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+            <li><a class="dropdown-item" href="shop.html?category=skincare">Skincare</a></li>
+            <li><a class="dropdown-item" href="shop.html?category=serums">Serums</a></li>
+            <li><a class="dropdown-item" href="shop.html?category=beauty-tools">Beauty Tools</a></li>
+            <li><a class="dropdown-item" href="shop.html?category=cleansers">Cleansers</a></li>
+            </ul>
+        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about1.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            </ul>
+    
+            <!-- Right-side button -->
+            <button class="btn btn-outline-primary ms-auto" type="button">
+            <a href="booking.html" class="nav-link fw-semibold">Make an appointment</a>
+            </button>
+        </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<section id="hero" class="hero-section pt-6">
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+    <div class="carousel-item text-black active">
+        <img src="images/home/slide-1.png" class="d-block w-100" alt="Skincare Hero">
+        <div class="carousel-caption">
+            <h1>Glow with LuxeEssence</h1>
+            <p>Discover our latest skincare collection</p>
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+        </div>
+    </div>
+    <div class="carousel-item text-black">
+        <img src="images/home/slide-2.png" class="d-block w-100" alt="Skincare Hero">
+        <div class="carousel-caption">
+            <h1>Glow Series - New Collection</h1>
+            <p>Discover Our Latest Products for a Radiant Glow</p>
+            <a href="shop.html" class="btn btn-primary">Explore the Collection</a>
+        </div>
+    </div>
+</div>
+<a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+</a>
+<a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+</a>
+</div>
+</section>
+
+
+
+
+
+
+
+<div class="product-tab m-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <!-- Grid/List View Toggle -->
+          <div class="grid-nav-wraper bg-light p-3 rounded">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <nav class="shop-grid-nav">
+                  <ul class="nav nav-pills align-items-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <i class="fa fa-th"></i> 
+                      </a>
+                    </li>
+                    <li class="nav-item mr-0" role="presentation">
+                      <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <i class="fa fa-list"></i> 
+                      </a>
+                    </li>
+                    <li>
+                      <span class="total-products text-capitalize">There are 13 products.</span>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+<!-- Custom dropdown instead of select -->
+<div class="col-12 col-md-6 position-relative">
+    <div class="shop-grid-button d-flex align-items-center">
+      <span class="sort-by mt-1">Sort by:</span>
+  
+      <!-- Custom Dropdown -->
+      <div class="dropdown ms-2">
+        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Open this select menu
+        </button>
+        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+          <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+          <li><a class="dropdown-item" href="#">Best Selling</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+            </div>
+          </div>
+          <!-- product-tab-nav end -->
+
+          <!-- Tab Content -->
+          <div class="tab-content m-5" id="pills-tabContent">
+            <!-- Grid View -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row grid-view">
+                <!-- Existing Grid Product Cards -->
+                <!-- Product 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card product-card border-0 shadow-sm rounded">
+                    <div class="card-body">
+                      <div class="product-thumbnail position-relative">
+                        <a href="single-product.html">
+                          <img class="first-img img-fluid rounded" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="LuxeEssence Ultra-Rich Night Cream">
+                        </a>
+                        <ul class="actions d-flex justify-content-center">
+                          <li><a class="action" href="wishlist.html"><span class="icon-heart"></span></a></li>
+                          <li><a class="action" href="#"><span class="icon-shuffle"></span></a></li>
+                          <li><a class="action" href="#"><span class="icon-magnifier"></span></a></li>
+                        </ul>
+                      </div>
+                      <div class="product-desc py-0 m-3">
+                        <h3 class="title"><a href="#">All Natural Makeup Beauty Cosmetics...</a></h3>
+                        <div class="star-rating">
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star de-selected"></span>
+                          </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span class="product-price">$11.90</span>
+                          <button class="pro-btn m-3" data-bs-toggle="modal" data-bs-target="#add-to-cart"><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card product-card border-0 shadow-sm rounded">
+                      <div class="card-body">
+                        <div class="product-thumbnail position-relative">
+  
+                          <a href="single-product.html">
+                            <img class="first-img img-fluid rounded" src="images/shop/Detoxifying-Charcoal-Face-Wash.png" alt="Detoxifying Charcoal Face Wash">
+                          </a>
+                          <!-- product links -->
+                          <ul class="actions d-flex justify-content-center">
+                            <li>
+                              <a class="action" href="wishlist.html">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-heart" aria-label="add to wishlist" data-bs-original-title="add to wishlist"></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="action" href="#" data-bs-toggle="modal" data-bs-target="#compare">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-shuffle" aria-label="Add to compare" data-bs-original-title="Add to compare"></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="action" href="#" data-bs-toggle="modal" data-bs-target="#quick-view">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-magnifier" aria-label="Quick view" data-bs-original-title="Quick view"></span>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- product links end-->
+                        </div>
+                        <div class="product-desc py-0 m-3">
+                         <h3 class="title">
+                            <a href="">On Trend Makeup and Beauty Cosmetics...</a>
+                          </h3>
+                          <div class="star-rating">
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star de-selected"></span>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <span class="product-price">
+                              <del class="del">$23.90</del>
+                              <span class="onsale">$21.51</span>
+                            </span>
+                            <button class="pro-btn m-3" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                              <i class="fas fa-shopping-basket"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- product-list End -->
+                  </div>
+  
+                  <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card product-card border-0 shadow-sm rounded">
+                      <div class="card-body">
+                        <div class="product-thumbnail position-relative">
+  
+                          <a href="single-product.html">
+                            <img class="first-img img-fluid rounded" src="images/shop/LuxeEssence-Jade-Roller.png" alt="LuxeEssence Jade Roller">
+                          </a>
+                          <!-- product links -->
+                          <ul class="actions d-flex justify-content-center">
+                            <li>
+                              <a class="action" href="wishlist.html">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-heart" aria-label="add to wishlist" data-bs-original-title="add to wishlist"></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="action" href="#" data-bs-toggle="modal" data-bs-target="#compare">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-shuffle" aria-label="Add to compare" data-bs-original-title="Add to compare"></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="action" href="#" data-bs-toggle="modal" data-bs-target="#quick-view">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-magnifier" aria-label="Quick view" data-bs-original-title="Quick view"></span>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- product links end-->
+                        </div>
+                        <div class="product-desc py-0 m-3">
+                         <h3 class="title">
+                            <a href="">New Balance Fresh Cream Kaymin from New Zealand</a>
+                          </h3>
+                          <div class="star-rating">
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star de-selected"></span>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <span class="product-price">$11.90</span>
+                            <button class="pro-btn m-3" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                              <i class="fas fa-shopping-basket"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card product-card border-0 shadow-sm rounded">
+                      <div class="card-body">
+                        <div class="product-thumbnail position-relative">
+                          <a href="single-product.html">
+                            <img class="first-img img-fluid rounded" src="images/shop/LuxeEssence-Soothing-Gel-Cleanser.png" alt="LuxeEssence Soothing Gel Cleanser">
+                          </a>
+                          <!-- product links -->
+                          <ul class="actions d-flex justify-content-center">
+                            <li>
+                              <a class="action" href="wishlist.html">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-heart" aria-label="add to wishlist" data-bs-original-title="add to wishlist"></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="action" href="#" data-bs-toggle="modal" data-bs-target="#compare">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-shuffle" aria-label="Add to compare" data-bs-original-title="Add to compare"></span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="action" href="#" data-bs-toggle="modal" data-bs-target="#quick-view">
+                                <span data-bs-toggle="tooltip" data-placement="bottom" class="icon-magnifier" aria-label="Quick view" data-bs-original-title="Quick view"></span>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- product links end-->
+                        </div>
+                        <div class="product-desc py-0 m-3">
+                         <h3 class="title">
+                            <a href="">Original Kaval Windbreaker Winter Cream</a>
+                          </h3>
+                          <div class="star-rating">
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="far fa-star"></span>
+                            <span class="fas fa-star"></span>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <span class="product-price">$11.90</span>
+                            <button class="pro-btn m-3" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+                              <i class="fas fa-shopping-basket"></i>
+  
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Additional grid product cards here -->
+              </div>
+            </div>
+
+<!-- List View -->
+<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="list-view">
+      <!-- Product 1 in List View -->
+      <div class="row mb-4 p-3 bg-white shadow-sm rounded">
+        <div class="col-md-3 product-image">
+          <a href="single-product.html">
+            <img class="img-fluid rounded" src="images/shop/LuxeEssence Ultra-Rich-Night-Cream.png" alt="LuxeEssence Ultra-Rich Night Cream">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3 class="title"><a href="#">All Natural Makeup Beauty Cosmetics...</a></h3>
+          <div class="star-rating mb-2">
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star de-selected"></span>
+          </div>
+          <p class="product-description mb-3">This is a brief description of the product. Lorem ipsum dolor sit amet...</p>
+          <div class="d-flex align-items-center justify-content-between">
+            <span class="product-price">$11.90</span>
+            <button class="pro-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 2 in List View -->
+      <div class="row mb-4 p-3 bg-white shadow-sm rounded">
+        <div class="col-md-3 product-image">
+          <a href="single-product.html">
+            <img class="img-fluid rounded" src="images/shop/Limited Edition – LuxeEssence Gold Collection.png" alt="Limited Edition – LuxeEssence Gold Collection">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3 class="title"><a href="#">All Natural Makeup Beauty Cosmetics...</a></h3>
+          <div class="star-rating mb-2">
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star de-selected"></span>
+          </div>
+          <p class="product-description mb-3">This is a brief description of the product. Lorem ipsum dolor sit amet...</p>
+          <div class="d-flex align-items-center justify-content-between">
+            <span class="product-price">$11.90</span>
+            <button class="pro-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-to-cart">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 3 in List View -->
+      <div class="row mb-4 p-3 bg-white shadow-sm rounded">
+        <div class="col-md-3 product-image">
+          <a href="single-product.html">
+            <img class="img-fluid rounded" src="images/shop/LuxeEssence-Soothing-Gel-Cleanser.png" alt="LuxeEssence Soothing Gel Cleanser">
+          </a>
+        </div>
+        <div class="col-md-9">
+          <h3 class="title"><a href="#">All Natural Makeup Beauty Cosmetics...</a></h3>
+          <div class="star-rating mb-2">
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="far fa-star"></span>
+            <span class="fas fa-star"></span>
+          </div>
+          <p class="product-description mb-3">This is a brief description of the product. Lorem ipsum dolor sit amet...</p>
+          <div class="d-flex align-items-center justify-content-between">
+            <span class="product-price">$11.90</span>
+            <button class="pro-btn btn btn-primary " data-bs-toggle="modal" data-bs-target="#add-to-cart">
+              <i class="fas fa-shopping-basket"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Additional list product rows here -->
+    </div>
+  </div>
+  
+
+
+              </div>
+            </div>
+
+
+
+        <div class="col-lg-3 order-lg-first p-2">
+            <aside class="left-sidebar">
+              <!-- search-filter start -->
+              <div class="search-filter">
+                <div class="sidbar-widget pt-0">
+                  <h4 class="title">Beauty &amp; Skincare</h4>
+                </div>
+              </div>
+
+              <ul id="offcanvas-menu2" class="blog-ctry-menu">
+                <li>
+                  <a href="javascript:void(0)">Skincare</a>
+                  <ul class="category-sub-menu">
+                    <li><a href="#">Cleansers</a></li>
+                    <li><a href="#">Moisturizers</a></li>
+                    <li><a href="#">Serums</a></li>
+                    <li><a href="#">Face Masks</a></li>
+                    <li><a href="#">Toners</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Beauty Tools</a>
+                  <ul class="category-sub-menu">
+                    <li><a href="#">Facial Rollers</a></li>
+                    <li><a href="#">LED Therapy Devices</a></li>
+                    <li><a href="#">Makeup Brushes</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Cosmetics</a>
+                  <ul class="category-sub-menu">
+                    <li><a href="#">Lipsticks</a></li>
+                    <li><a href="#">Foundations</a></li>
+                    <li><a href="#">Concealers</a></li>
+                    <li><a href="#">Blushes</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="search-filter">
+                <form action="#">
+                  <div class="sidbar-widget mt-1">
+                    <h3 class="title">Filter By : </h3>
+                    <h4 class="sub-title mt-4">Categories</h4>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="category1">
+                      <label for="category1">Moisturizers <span>(10)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="category2">
+                      <label for="category2">Cleansers <span>(8)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="category3">
+                      <label for="category3">Serums <span>(12)</span></label>
+                    </div>
+                  </div>
+
+                  <!-- Updated Price Filter (Volume/Range for Beauty Products) -->
+                  <div class="sidbar-widget mt-3">
+                    <h4 class="sub-title">Price Range</h4>
+                    <div class="price-filter mt-1">
+                      <div class="price-slider-amount">
+                        <input type="text" id="amount" name="price" readonly="" placeholder="Price Range: $10 - $500">
+                      </div>
+                      <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                        <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 20%; width: 60%;"></div>
+                        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 20%;"></span>
+                        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 80%;"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Updated Filter: Skin Type -->
+                  <div class="sidbar-widget mt-3">
+                    <h4 class="sub-title">Skin Type</h4>
+                    <div class="widget-check-box mt-1">
+                      <input type="checkbox" id="skin-normal">
+                      <label for="skin-normal">Normal <span>(5)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="skin-oily">
+                      <label for="skin-oily">Oily <span>(8)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="skin-sensitive">
+                      <label for="skin-sensitive">Sensitive <span>(6)</span></label>
+                    </div>
+                  </div>
+
+                  <!-- Updated Filter: Ingredients -->
+                  <div class="sidbar-widget mt-3">
+                    <h4 class="sub-title">Ingredients</h4>
+                    <div class="widget-check-box mt-1">
+                      <input type="checkbox" id="ingredient-hyaluronic">
+                      <label for="ingredient-hyaluronic">Hyaluronic Acid <span>(12)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="ingredient-vitaminC">
+                      <label for="ingredient-vitaminC">Vitamin C <span>(10)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="ingredient-retinol">
+                      <label for="ingredient-retinol">Retinol <span>(7)</span></label>
+                    </div>
+                  </div>
+
+                  <!-- Updated Filter: Product Volume -->
+                  <div class="sidbar-widget mt-3">
+                    <h4 class="sub-title">Product Volume</h4>
+                    <div class="widget-check-box mt-1">
+                      <input type="checkbox" id="volume-small">
+                      <label for="volume-small">30ml <span>(5)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="volume-medium">
+                      <label for="volume-medium">50ml <span>(10)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="volume-large">
+                      <label for="volume-large">100ml <span>(3)</span></label>
+                    </div>
+                  </div>
+
+                  <!-- Updated Filter: Brand -->
+                  <div class="sidbar-widget mt-3">
+                    <h4 class="sub-title">Brand</h4>
+                    <div class="widget-check-box mt-1">
+                      <input type="checkbox" id="brand1">
+                      <label for="brand1">LuxeEssence <span>(15)</span></label>
+                    </div>
+                    <div class="widget-check-box">
+                      <input type="checkbox" id="brand2">
+                      <label for="brand2">Organic Skin Co. <span>(8)</span></label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- search-filter end -->
+
+              <!-- Tags -->
+              <div class="sidebar-widget mt-1">
+                <h5 class="widget-title">Product Tags</h5>
+                <div class="tag-cloud d-flex flex-wrap">
+                  <a href="#" class="border px-3 py-1 m-1">Beauty</a>
+                  <a href="#" class="border px-3 py-1 m-1">Skincare</a>
+                  <a href="#" class="border px-3 py-1 m-1">Serum</a>
+                  <a href="#" class="border px-3 py-1 m-1">Moisturizer</a>
+                </div>
+              </div>
+
+              <!-- Sidebar Banner -->
+              <div class="banner hover-animation position-relative overflow-hidden mt-3">
+                <a href="shop-grid-4-column.html"><img src="images/shop/LuxeEssence-LED-Light-Therapy-Mask.png" alt="Sale Banner" class="img-fluid mb-3"></a>
+              </div>
+              <div class="banner hover-animation position-relative overflow-hidden">
+                <a href="shop-grid-4-column.html"><img src="images/shop/Limited Edition – LuxeEssence Gold Collection.png" alt="Sale Banner" class="img-fluid"></a>
+              </div>
+            </aside>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- Pagination Section -->
+<nav class="pagination-section mt-4">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link border-0 shadow-sm" href="#"><i class="fas fa-chevron-left"></i></a> <!-- Left Chevron -->
+      </li>
+      <li class="page-item active">
+        <a class="page-link border-0 shadow-sm bg-primary text-white" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link border-0 shadow-sm" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link border-0 shadow-sm" href="#"><i class="fas fa-chevron-right"></i></a> <!-- Right Chevron -->
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+
+
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row justify-content-between">
+        <!-- Logo and About Us -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="footer-logo mb-3">
+            <a href="index.html" class="text-white fs-4">LuxeEssence Clinic</a>
+          </div>
+          <p class="text-light">
+            LuxeEssence Clinic provides premium skincare products designed to bring out your natural glow. We focus on quality and results-driven formulas that leave your skin feeling nourished and radiant.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 col-lg-2 mb-4">
+          <h5 class="text-uppercase">Information</h5>
+          <ul class="footer-menu list-unstyled">
+            <li><a href="about1.html" class="text-light">About Us</a></li>
+            <li><a href="contact.html" class="text-light">Contact Us</a></li>
+            <li><a href="services.html" class="text-light">Services</a></li>
+            <li><a href="fqa.html" class="text-light">FQA</a></li>
+            <li><a href="refund-policy.html" class="text-light">Refund Policy</a></li>
+          </ul>
+        </div>
+  
+        <!-- Account Links -->
+        <div class="col-6 col-md-3 col-lg-2 mb-4">
+          <h5 class="text-uppercase">Account</h5>
+          <ul class="footer-menu list-unstyled">
+            <li><a href="login.html" class="text-light">Login-Register</a></li>
+            <li><a href="dashboard.html" class="text-light">My Account</a></li>
+            <li><a href="booking.html" class="text-light">Make An Appointment</a></li>
+  
+          </ul>
+        </div>
+  
+        <!-- Newsletter -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <h5 class="text-uppercase">Stay in the Loop</h5>
+          <p class="text-light mb-3">Subscribe to our newsletter for the latest updates on new arrivals and special offers.</p>
+          <form class="newsletter-form d-flex" action="#" method="post">
+            <input class="form-control me-2" type="email" placeholder="Enter your email" required>
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Social Media and Copyright -->
+      <div class="row align-items-center pt-4 mt-4 border-top">
+        <div class="col-md-6 col-lg-4 text-center text-md-start mb-3 mb-md-0">
+          <p>&copy; 2024 LuxeEssence. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center">
+          <ul class="social-icons list-unstyled d-flex justify-content-center mb-0">
+            <li class="me-3"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="me-3"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+            <li class="me-3"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+            <li class="me-3"><a href="#" class="text-white"><i class="fab fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-12 col-lg-4 text-center text-lg-end">
+          <img src="images/1.webp" alt="Payment Methods" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
